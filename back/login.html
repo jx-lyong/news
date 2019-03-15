@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>新闻发布系统后台用户登陆页面</title>
+	<link rel="stylesheet" href="../lib/css/bootstrap.min.css">
+	<script src="../lib/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="../css/common.css">
+</head>
+<body>
+<div class="panel panel-info" style="width:500px;margin:100px auto;">
+  <div class="panel-heading">用户登陆</div>
+  <div class="panel-body">
+	 <form class="form-horizontal" method="post" action="rec.php">
+	  <div class="form-group">
+	    <label for="username" class="col-sm-2 control-label">用户</label>
+	    <div class="col-sm-10">
+	      <input type="text" name="username" class="form-control" id="username" placeholder="用户名">
+	    </div>
+	  </div>
+	  <div class="form-group">
+	    <label for="pwd" class="col-sm-2 control-label">密码</label>
+	    <div class="col-sm-10">
+	      <input type="password" name="pwd" class="form-control" id="pwd" placeholder="密码">
+	    </div>
+	  </div>
+	  <div class="form-group">
+	    <div class="col-sm-offset-2 col-sm-10">
+	      <button type="submit" class="btn btn-info form-control">登陆</button>
+	    </div>
+	  </div>
+	</form>
+  </div>
+</div>
+
+
+</body>
+</html>

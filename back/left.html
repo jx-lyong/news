@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="../lib/js/jquery.js"></script>
+	<script>
+		$(function(){
+			$("ul:gt(0)").hide();
+			$(".menu>h3").click(function(){
+				$(this).next().toggle();	
+			});
+			
+		});
+	</script>
+	<style>
+		body,h3,ul,li{
+			font-size: 14px;
+			margin:0px;
+			padding:0px;
+		}
+		.menu{
+			width:150px;
+			height:auto;
+			
+		}
+		h3{
+			width:150px;
+			line-height: 30px;
+			text-indent:30px;
+			background-color: #369;
+			color:#fff;
+			border-bottom:1px solid #eee;
+		}
+		h3>span,ul li span{
+			font-weight: bold;
+			margin-right:5px;
+		}
+		
+		ul{
+			list-style: none;
+		}
+		ul li{
+			width:148px;
+			line-height: 25px;
+			border:1px solid #eee;
+			border-top:none;
+			text-align: center;
+		}
+
+		ul li a{
+			text-decoration: none;
+			color:#000;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="menu">
+		<h3><span>+</span>新闻管理 </h3>
+		<ul>
+			<li><span>-</span><a href="news.php" target="right">添加新闻</a></li>
+			<li><span>-</span><a href="modifynews.php" target="right">编辑新闻</a></li>
+			<li><span>-</span><a href="project.php" target="right">专题新闻</a></li>
+		</ul>
+		<h3><span>+</span>菜单管理 </h3>
+		<ul>
+			<li><span>-</span><a href="menu.php" target="right">添加菜单</a></li>
+			<li><span>-</span><a href="modifyMenu.php" target="right">编辑菜单</a></li>
+		</ul>
+		<h3><span>+</span>评论管理 </h3>
+		<ul>
+			<li><span>-</span><a href="msg.php" target="right">评论设置</a></li>
+		</ul>
+		<h3><span>+</span>系统管理</h3>
+		<ul>
+			<li><span>-</span><a href="modifyPwd.php" target="right">信息修改</a></li>
+			<li><span>-</span><a href="config.php" target="right">系统配置</a></li>
+			<li><span>-</span><a href="exit.php" target="_parent">退出管理</a></li>
+		</ul>
+	</div>
+</body>
+</html>

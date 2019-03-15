@@ -1,0 +1,9 @@
+<?php
+session_start();
+if(isset($_SESSION['username'])){
+    session_destroy();//删除用户信息
+    header("location:login.html");
+}else
+{
+    header("location:login.html");
+}

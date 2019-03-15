@@ -1,0 +1,8 @@
+*{margin:0;padding:0;}
+ul{list-style: none;}
+.row li{float: left;padding:12px 30px;}
+.row>.navbar li a{color:#fff;text-decoration: none;}
+.row>img{width:100%;}
+.gs1 li,.detail li{padding:5px 10px;}
+.gs1 li>a{color:#000;font-size: 14px;}
+.banner2>img{width:100%;}
